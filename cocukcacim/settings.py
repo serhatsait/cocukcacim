@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cocukcacim.apps.home',
-    # 'cocukcacim.apps.contact',
+    'cocukcacim.apps.block',
+    'cocukcacim.apps.contact',
 ]
 
 MIDDLEWARE = [

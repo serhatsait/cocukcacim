@@ -21,6 +21,12 @@ class BlockPosition(models.Model):
 
 
 class Block(models.Model):
+    ALIGN = (
+        ('LEFT', 'LEFT'),
+        ('CENTER', 'CENTER'),
+        ('RIGHT', 'RIGHT'),
+    )
+
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Oluşturulma Tarihi")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Güncelleme Tarihi")
     name = models.CharField(max_length=255, verbose_name="İsim", default="Blok İsmi Giriniz!!!!")
@@ -28,9 +34,10 @@ class Block(models.Model):
     title2 = models.CharField(max_length=255, verbose_name="Başlık 2", blank=True, null=True)
     icon = models.CharField(max_length=255, verbose_name="Font Awesome Icon İsmi", blank=True, null=True)
     description = models.TextField(verbose_name="Açıklama", null=True, blank=True)
+    description_align = models.CharField(max_length=255, choices=ALIGN, verbose_name="Açıklama Hizalama", blank=True)
+
     image1 = models.TextField(verbose_name="Resim 1", null=True, blank=True)
     image2 = models.TextField(verbose_name="Resim 2", blank=True, null=True)
-
 
     # Sınıfla ilgili bilgiler
     class Meta:
