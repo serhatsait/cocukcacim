@@ -47,4 +47,4 @@ class Block(models.Model):
 
     # classın override ettiğimiz fonksiyonları
     def __str__(self):
-        return self.title
+        return self.title1

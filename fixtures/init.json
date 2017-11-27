@@ -1,0 +1,20 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$36000$yyCwnJjhCvzs$dMvc0oEaWMRptjafQQIkVLTgqQ+TZ7mSVduQMRJphu0=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "cagdas",
+    "first_name": "",
+    "last_name": "",
+    "email": "c.kurultay@orgino.com.tr",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2017-11-27T15:24:51.360Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
