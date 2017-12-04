@@ -17,7 +17,7 @@ class BlockPosition(models.Model):
 
     # classın override ettiğimiz fonksiyonları
     def __str__(self):
-        return self.title
+        return self.name
 
 
 class Block(models.Model):
@@ -38,6 +38,7 @@ class Block(models.Model):
 
     image1 = models.TextField(verbose_name="Resim 1", null=True, blank=True)
     image2 = models.TextField(verbose_name="Resim 2", blank=True, null=True)
+    position = models.ForeignKey(BlockPosition, null=True, blank=True, verbose_name="Blok Pozisyonu")
 
     # Sınıfla ilgili bilgiler
     class Meta:
