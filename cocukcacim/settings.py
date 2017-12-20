@@ -35,9 +35,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ckeditor',
+    'ckeditor_uploader',
     'cocukcacim.apps.home',
     'cocukcacim.apps.block',
     'cocukcacim.apps.contact',
+    'cocukcacim.apps.page',
+    'cocukcacim.apps.activities',
 ]
 
 MIDDLEWARE = [

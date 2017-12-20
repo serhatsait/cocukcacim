@@ -20,7 +20,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'', include('cocukcacim.apps.home.urls', namespace='home')),
+    url(r'^sayfa/', include('cocukcacim.apps.page.urls', namespace='page')),
 ]
 
 # http://cocukcacim.com/
