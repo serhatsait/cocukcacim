@@ -1,0 +1,27 @@
+{% extends 'page.base.html' %}{% load staticfiles %}
+{% block app %}
+    <div id="Page" class="sub-page" style="background-image:url('/media/{{ page.body_image }}')">
+        <header style="background-image:url('/media/{{ page.header_image }}')">
+            <div class="black-transparent"></div>
+            <div class="logo">
+                <a href="/" title="Anasayfa"><img src="{% static 'img/zdergi-logo-clean-white.svg' %}" alt="ZDergi"
+                                                  title="Zdergi"/></a>
+            </div>
+            <div class="lines">
+                <div class="line left-line"></div>
+                <div class="line right-line">
+                    <a href="/ara" title="Ara"><i class="fa fa-search"></i></a>
+                    <a href="/" title="Anasayfa"><i class="fa fa-home"></i></a>
+                </div>
+            </div>
+        </header>
+        <article style="padding-bottom:90px;">
+            <div class="container">
+                <h1 class="article-title">{{ page.title }}</h1>
+                <div class="content">
+                    {{ page.context|safe }}
+                </div>
+            </div>
+        </article>
+    </div>
+{% endblock %}
