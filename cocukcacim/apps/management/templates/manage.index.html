@@ -1,0 +1,742 @@
+{% load staticfiles  %}
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="../../../../cocukcacim-html/img/cropped-favicon-192x192.png"/>
+    <title>Yönetim</title>
+    <link rel='stylesheet' href='../../../../cocukcacim-html/css/font-awesome.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='../../../../cocukcacim-html/css/jquery.fancybox.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='../../../../cocukcacim-html/css/select2.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='../../../../cocukcacim-html/css/animate.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='../../../../cocukcacim-html/css/main.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='../../../../cocukcacim-html/css/shop.css' type='text/css' media='all'/>
+    <script type='text/javascript' src='../../../../cocukcacim-html/js/jquery.js'></script>
+    <script type='text/javascript' src='../../../../cocukcacim-html/js/jquery-migrate.min.js'></script>
+    <link rel="icon" href="../../../../cocukcacim-html/img/cropped-favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" href="../../../../cocukcacim-html/img/cropped-favicon-192x192.png" sizes="192x192"/>
+    <link rel="apple-touch-icon-precomposed" href="../../../../cocukcacim-html/img/cropped-favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="img/cropped-favicon-270x270.png">
+</head>
+
+<body class="page wide wave-style">
+<div class="page">
+    <!-- top panel -->
+    <div class='site_top_panel wave slider'>
+        <!-- canvas -->
+        <div class='top_half_sin_wrapper'>
+            <canvas class='top_half_sin' data-bg-color='#ffffff' data-line-color='#ffffff'></canvas>
+        </div>
+        <!-- / canvas -->
+        <div class='container'>
+            <div class='row_text_search'>
+                <div id='top_panel_text'><a href="tel:+905417221375"><i class="fa fa-phone-square"></i>
+                    +90 541 722 13 75</a>
+                    <a href="mailto:info@cocukcacim.org"> <i class="fa fa-envelope-o"></i>info@cocukcacim.org</a>
+                </div>
+                <form method="get" class="search-form" action="#">
+                    <label>
+                        <span class="screen-reader-text">Search for:</span>
+                        <input type="text" class="search-field vova" value="" name="s" title="Search for:"/>
+                    </label>
+                    <input type="submit" class="search-submit" value="Search"/>
+                    <input type='hidden' name='lang' value='en'/>
+                </form>
+            </div>
+            <div id='top_panel_links'>
+                <div class='search_icon'></div>
+                <div id='top_social_links_wrapper'>
+                    <div class='share-toggle-button'><i class='share-icon fa fa-share-alt'></i></div>
+                    <div class='cws_social_links'><a href='https://twitter.com/cocukcacim' target="_blank"
+                                                     class='cws_social_link'
+                                                     title='Twitter'><i
+                            class='share-icon fa fa-twitter'></i></a><a
+                            href='https://www.facebook.com/cocukcacim/?ref=bookmarks' target="_blank"
+                            class='cws_social_link' title='Facebook'><i
+                            class='share-icon fa fa-facebook'></i></a><a href='https://www.instagram.com/cocukcacim/'
+                                                                         target="_blank"
+                                                                         class='cws_social_link' title='İnstagram'><i
+                            class='share-icon fa fa-instagram'></i></a></div>
+                </div>
+
+            </div>
+            <div class="site_top_panel_toggle"></div>
+        </div>
+    </div>
+    <!-- / top panel -->
+    <!-- header container -->
+    <div class='header_cont'>
+        <div class='header_mask'>
+            <div class='header_pattern'></div>
+            <div class='header_img'></div>
+        </div>
+        <header class='site_header logo-in-menu' data-menu-after="3">
+            <div class="header_box">
+                <div class="container">
+                    <!-- logo -->
+                    <div class="header_logo_part with_border" role="banner">
+                        <a class="logo" href="../../../../cocukcacim-html/index.html"><img src='../../../../cocukcacim-html/img/cocukca-logo.png'
+                                                                                           data-at2x='img/cocukca-logo.png' alt/></a>
+                    </div>
+                    <!-- / logo -->
+                    <!-- menu -->
+                    <div class="header_nav_part">
+                        <nav class="main-nav-container a-right">
+                            <div class="mobile_menu_header">
+                                <i class="mobile_menu_switcher"><span></span><span></span><span></span></i>
+                            </div>
+                            <ul id="menu-main-menu" class="main-menu menu-bees">
+                                <!-- menu item -->
+                                <li class="menu-item menu-item-has-children bees-start">
+                                    <a href="../../../../cocukcacim-html/index.html">
+                                        <div class="bees bees-start"><span></span>
+                                            <div class="line-one"></div>
+                                            <div class="line-two"></div>
+                                        </div>
+                                        Anasayfa
+                                        <div class="canvas_wrapper">
+                                            <canvas class="menu_dashed"></canvas>
+                                        </div>
+                                    </a>
+
+
+                                </li>
+                                <!-- / menu item -->
+                                <!-- menu item -->
+                                <li class="menu-item menu-item-has-children"><a href="../../../../cocukcacim-html/hikayemiz.html">Hikayemiz
+                                    <div class="canvas_wrapper">
+                                        <canvas class="menu_dashed"></canvas>
+                                    </div>
+                                </a>
+
+                                    <ul class="sub-menu">
+                                        <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                        </li>
+
+
+                                        <ul class="sub-menu">
+                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                            </li>
+
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- / menu item -->
+                                <!-- menu item -->
+                                <li class="menu-item current-menu-item page_item current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children">
+                                    <a href="yonetim.html">Yönetim
+                                        <div class="canvas_wrapper">
+                                            <canvas class="menu_dashed"></canvas>
+                                        </div>
+                                    </a>
+
+                                    <ul class="sub-menu">
+
+                                    </ul>
+                                </li>
+                                <!-- / menu item -->
+                                <!-- menu item -->
+                                <li class="menu-item menu-item-has-children right"><a href="../../../../cocukcacim-html/etkinlikler.html">Etkinlik
+                                    <div class="canvas_wrapper">
+                                        <canvas class="menu_dashed"></canvas>
+                                    </div>
+                                </a>
+
+                                    <ul class="sub-menu">
+
+                                    </ul>
+                                </li>
+                                <!-- / menu item -->
+                                <!-- menu item -->
+                                <li class="menu-item menu-item-has-children right"><a href="../../../../cocukcacim-html/tuzuk.html">Tüzük
+                                    <div class="canvas_wrapper">
+                                        <canvas class="menu_dashed"></canvas>
+                                    </div>
+                                </a>
+
+                                    <ul class="sub-menu">
+                                        <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- / menu item -->
+                                <!-- menu item -->
+                                <li class="menu-item right bees-end">
+                                    <a href="../cocukcacim/apps/contact/templates/iletisim.html">
+                                        <div class="bees bees-end"><span></span>
+                                            <div class="line-one"></div>
+                                            <div class="line-two"></div>
+                                        </div>
+                                        İletişim
+                                        <div class="canvas_wrapper">
+                                            <canvas class="menu_dashed"></canvas>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- / menu item -->
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- / menu -->
+                </div>
+            </div>
+        </header>
+        <!-- #masthead -->
+    </div>
+    <!-- / header container -->
+    <!-- breadcrumbs -->
+    <section class='page_title wave'>
+        <div class='container'>
+            <div class='title'>
+                <h1>Yönetim Kurulu</h1></div>
+            <nav class="bread-crumbs"><a href="../../../../cocukcacim-html/index.html">Anasayfa</a><i
+                    class="delimiter fa fa-chevron-right"></i><span
+                    class="current">Yönetim</span></nav>
+            <!-- .breadcrumbs -->
+        </div>
+        <canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
+    </section>
+    <!-- / breadcrumbs -->
+    <!-- main container -->
+    <div id="main" class="site-main">
+        <div class="page_content">
+            <!-- pattern container / -->
+            <div class='left-pattern pattern pattern-2'></div>
+            <main>
+                <!-- content section -->
+                <div class='grid_row clearfix'>
+                    <div class='grid_col grid_col_6'>
+                        <div class='ce clearfix'>
+                            <h3 class="ce_title">Biz kimiz?</h3>
+                            <div>
+                                <p><img class="size-medium image-type alignleft" src="../../../../cocukcacim-html/img/ptt.png"
+                                        width="300" height="300" alt="logo"/>Bizler çocuk istismarını önleme konusunda
+                                    gönüllü olarak çalışmayı amaç edindik. Bu işi ulaşabildiğimiz tüm insanlara tamamen
+                                    ücretsiz olarak sunmayı taahhüt ediyoruz. Çocuk İstismarı ve ihmali konusunda
+                                    yaptığımız araştırmalar, başlangıç deneyimi kazanma, dernek kurucu kadrosunu
+                                    oluşturma, sponsorlar belirleme, faaliyet alanları ve okullarını belirleme ve
+                                    anlaşma yapma, kısacası zemin etüdü çabalarımız tam olarak 1 yıl sürdü. Tüm
+                                    çalışmalarımızı tamamlayıp da artık faaliyete geçebiliriz dediğimiz zaman 22.09.2017
+                                    günü derneğimizin resmi olarak kuruluşunu gerçekleştirdik.</p>
+                                <p>Çalışmalarımızdan en üst seviyede verim alabilmek için kadromuzu alanında uzman
+                                    kişilerle donattık. Uzman psikologlarımız, doktorlarımız, sosyologlarımız, çeşitli
+                                    üniversitelerde öğretim görevlisi olarak görev yapan değerli akademisyenlerimiz ve
+                                    serbest meslek sahibi avukatlarımız ile hedeflerimizi gerçekleştirmek, yarınlarımız
+                                    olan çocuklarımızın tertemiz yetişip büyümelerini sağlamak için yola koyulduk.
+                                    Umarız geniş kitlelerde çocuklarımızın sesi oluruz. Hep birlikte çocuk istismarına
+                                    dur diyebiliriz.</p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion -->
+                    <div class='grid_col grid_col_6'>
+                        <div class='ce clearfix'>
+                            <h3 class="ce_title">Ne Yapıyoruz?</h3>
+                            <div class='cws_ce_content ce_accordion'>
+                                <div class='accordion_section active'>
+                                    <div class='accordion_title'><i class='accordion_icon'></i><span>Seminerler</span>
+                                    </div>
+                                    <div class='accordion_content'>
+                                        <p>Çocuklarımızı uğradıkları duygusal, fiziksel ve cinsel ihmal ve
+                                            istismarlardan korumak için onların eğitiminde başrolde olan ailelerini ve
+                                            öğretmenlerini bu alanda bilgilendirmek adına alanında uzman kişiler
+                                            vasıtasıyla okullarda ve ilçelerde çocuk istismarı ve ihmali konusunda halka
+                                            açık ücretsiz olarak seminerler düzenliyoruz. </p>
+                                    </div>
+                                </div>
+                                <div class='accordion_section'>
+                                    <div class='accordion_title'><i class='accordion_icon'></i><span>Bilgilendirme ve Bilinçlendirme</span>
+                                    </div>
+                                    <div class='accordion_content' style='display:none;'>
+                                        <p>Çocuk istismarı nedir, nasıl önlenir, çocuğun istismara maruz kaldığını nasıl
+                                            anlarız ve ne yapmalıyız? Gibi temel sorulara bilimsel yanıtlar vererek
+                                            toplumun bu konuda bilinçlenmesini hedefliyoruz.</p>
+                                    </div>
+                                </div>
+                                <div class='accordion_section'>
+                                    <div class='accordion_title'><i class='accordion_icon'></i><span>Kilit nokta</span>
+                                    </div>
+                                    <div class='accordion_content' style='display:none;'>Kilit nokta özellikle aileler
+                                        ve sonra öğretmenlerdir. Onlar bu konuda ne yapacağını bilirlerse sorun büyük
+                                        ölçüde çözülmüş olur. Bunların yanında Birleşmiş Milletler Genel Kurulu
+                                        Tarafından 20 Kasım 1989 Tarihinde kabul edilen ve ülkemizin 1995'te taraf
+                                        olduğu “Çocuk Haklarına Dair Sözleşme” kapsamında çocuklarımıza çocuk haklarını
+                                        elimizden geldiğince öğretmeyi ve bu konuda onları bilinçlendirmeyi
+                                        hedefliyoruz.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / accordion -->
+                </div>
+
+
+                <!-- our team section -->
+                <div class='grid_row clearfix'>
+                    <section class='cws_ourteam'>
+                        <div class='cws_wrapper'>
+                            <div class='cws_ourteam_items grid grid-4 isotope'>
+                                <!-- team item -->
+                                <article class='item'>
+                                    <div class='ourteam_item_wrapper'>
+                                        <div class='media_part'>
+                                            <div class='pic'><img src='../../../../cocukcacim-html/img/yntm11.jpg'
+                                                                  alt/>
+                                                <div class='hover-effect'></div>
+                                                <div class='links_popup'>
+                                                    <div class='link_cont'>
+                                                        <div class='link'>
+                                                            <a class='fancy' href='../../../../cocukcacim-html/img/yntm1.jpg'
+                                                               data-fancybox-group='cws-portfolio-gallery-564ee111237c6'><i
+                                                                    class='fa fa-camera'></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='title_wrap'>
+                                            <h3 class='title'><a href='#'>Yönetim Kurulu Başkanı</a></h3>
+                                            <div class='positions'><a>Av.Buğra Kağan OĞUZ</a><br>
+                                                <div style="display: none;" id="hidden-content">
+                                                    <br>
+                                                    <h2>Özgeçmiş</h2>
+                                                    <p>1990 yılında Antalya’nın Serik İlçesi’nde doğdu. İlköğrenimini
+                                                        Serik Cumhuriyet İlköğretim Okulu’nda, ortaöğrenimini Serik Gazi
+                                                        İlköğretim Okulu’nda tamamladıktan sonra Lise öğrenimine Serik
+                                                        Anadolu Lisesi’nde devam etti. Liseden sonra İstanbul Bilgi
+                                                        Üniversitesi Hukuk Fakültesi’ni kazanan Oğuz 2014 yılında mezun
+                                                        olduktan sonra aynı yıl Antalya Barosu’nda avukatlık stajını
+                                                        başlattı ve stajını tamamlayarak 2015 yılında serbest avukatlığa
+                                                        başladı. 2010 yılında ABD’nin Lock Haven Üniversitesi’nde
+                                                        Amerikan İngilizcesi, Kriminal Hukuk ve Ceza Hukuku alanında
+                                                        eğitim aldı. Hızlı okuma ve diksiyon alanındaki eğitimlerini ise
+                                                        Türkiye’de tamamladı. Hukuk alanında çeşitli eğitim ve
+                                                        seminerlere katılarak mesleki birçok sertifika sahibi olan Buğra
+                                                        Kağan OĞUZ avukatlığın yanında, hukuk uyuşmazlıklarında
+                                                        uzlaştırmacı olarak da görev almaktadır. İyi derecede İngilizce
+                                                        bilen Oğuz’un yakından ilgilendiği ve lisansının bulunduğu spor
+                                                        futbol olmakla beraber, serbest dalış ve paraşütle serbest
+                                                        atlama alanında da sertifikası bulunmaktadır. Mesleği gereği
+                                                        çocuk istismarı suçuyla sıkça karşılaşan Oğuz toplumdaki
+                                                        eğitimsizlikten ileri geldiğini gördüğü bu alana girerek, gerek
+                                                        çocuklara gerekse ailelere verilecek eğitim ve
+                                                        bilgilendirmelerle istismar eyleminin azalacağı kanaatiyle 2016
+                                                        yılı sonunda dernek kurma fikrini edinmiştir. Bu alanda yaptığı
+                                                        araştırmalar, başlangıç deneyimi kazanma, zemin etüdü ve dernek
+                                                        kurucu kadrosunu oluşturma çabaları tam olarak 1 yıl sürmüştür.
+                                                        Bu aşamadan sonra 2017 yılı son çeyreğinde hayalini kurduğu
+                                                        dernek tam olarak kurulum aşamasına gelmiştir. Kuruluştan sonra
+                                                        özverili kurucu kadrosunun ve alanında uzman kişilerin
+                                                        desteğiyle birlikte 2017 Eğitim-Öğretim yılında başlatılan
+                                                        eğitim ve seminerlerle dernek faaliyete geçmiştir. Buğra Kağan
+                                                        OĞUZ avukatlık mesleğine devam etmekle birlikte Kurucusu olduğu
+                                                        ÇocukÇa Derneği’nin Yönetim Kurulu Başkanlığı görevini de
+                                                        sürdürmektedir.<br>İletişim:bugrakaganoguz@cocukcacim.org</p>
+
+                                                </div>
+                                                <a data-fancybox data-src="#hidden-content" href="javascript:;">
+                                                    Özgeçmiş
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- / team item -->
+                                <!-- team item -->
+                                <article class='item'>
+                                    <div class='ourteam_item_wrapper'>
+                                        <div class='media_part'>
+                                            <div class='pic'>
+                                                <img src='../../../../cocukcacim-html/img/yntm22.jpg'
+                                                     alt/>
+                                                <div class='hover-effect'></div>
+                                                <div class='links_popup'>
+                                                    <div class='link_cont'>
+                                                        <div class='link'>
+                                                            <a href='../../../../cocukcacim-html/img/yntm2.png' class='fancy'><i
+                                                                    class='fa fa-camera'></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='title_wrap'>
+                                            <h3 class='title'>Başkan Yardımcısı</h3>
+                                            <div class='positions'>
+                                                <a>Uzm.Klinik Psikolog Mehmet ARSEVEN</a>
+                                                <div style="display: none;" id="hidden-content2">
+                                                    <h2>Özgeçmiş</h2>
+                                                    <p>1990 yılında Antalya’nın Serik İlçesi’nde doğdu. İlk ve
+                                                        ortaöğretimini Serik Tekeli İlköğretim Okulu’nda tamamladıktan
+                                                        sonra Lise öğrenimine Serik Anadolu Lisesi’nde devam etti.
+                                                        Liseden sonra Girne Amerikan Üniversitesi İngilizce Psikoloji
+                                                        bölümünü kazanan Arseven 2013 yılında mezun olduktan sonra 2014
+                                                        yılında İstanbul Esenyurt Üniversitesinde Yüksek lisansa başladı
+                                                        . Daha sonra Yakın Doğu Üniversitesinde ikinci uzmanlığını
+                                                        tamamladı. Çocuk zeka ve gelişimi üzerine testör ve
+                                                        uygulayıcısıdır, aynı zamanda yetişkin psikoterapisi
+                                                        yapmaktadır. İki yıl özel bi hastanede çalıştıktan sonra kendi
+                                                        kliniğini açan Mehmet ARSEVEN şuan özel muaynehanesinde hizmet
+                                                        vermekle birlikte Kurucusu olduğu ÇocukÇa Derneği’nin Yönetim
+                                                        Kurulu Başkan yardımcılığı görevini de sürdürmektedir.<br>İletişim:mehmetarseven@cocukcacim.org
+                                                    </p>
+
+                                                </div>
+                                                <a data-fancybox data-src="#hidden-content2" href="javascript:;">
+                                                    Özgeçmiş
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- / team item -->
+                                <!-- team item -->
+                                <article class='item'>
+                                    <div class='ourteam_item_wrapper'>
+                                        <div class='media_part'>
+                                            <div class='pic'><img src='../../../../cocukcacim-html/img/yntm33.jpg'
+                                                                  alt/>
+                                                <div class='hover-effect'></div>
+                                                <div class='links_popup'>
+                                                    <div class='link_cont'>
+                                                        <div class='link'><a href='../../../../cocukcacim-html/img/yntm3.jpg'
+                                                                             class='fancy'><i class='fa fa-camera'></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='title_wrap'>
+                                            <h3 class='title'>Genel Sekreter</h3>
+                                            <div class='positions'><a>Mustafa Uğur CAN</a> <br>
+                                                <div style="display: none;" id="hidden-content3">
+                                                    <h2>Özgeçmiş</h2>
+                                                    <p> 1991 yılında Konya’nın Ereğli ilçesinde doğdu. Ailesinin memur
+                                                        olması nedeniyle ilköğrenimini Antalya-Şanlıurfa-Edirne
+                                                        şehirlerinde tamamladı. Lise öğrenimini Antalya Serik Anadolu
+                                                        Lisesinde tamamladıktan sonra Ondokuz Mayıs Üniversitesi Siyaset
+                                                        Bilimi ve Kamu Yönetimi lisans programına yerleşti. Samsun da
+                                                        birçok firmada temsilcilikler ve gönüllü projelerde çalışmalar
+                                                        yürüttü. Ondokuz Mayıs Üniversitesi Öğrenci Konseyi Başkanlığı
+                                                        yaptığı 2010-2012 yılları arasında başta Kızılay olmak üzere,
+                                                        YÖK, Valilik, Belediye vb. kurum ve kuruluşlarla çalışarak
+                                                        üniversite gençliğinin yararlanacağı projeleri hayata soktu.
+                                                        Mezun olduktan sonra ki süreçte Antalya’ya dönen CAN özel bir
+                                                        kamuoyu araştırma şirketinde il temsilciliği pozisyonunda
+                                                        çalışma hayatına devam etmektedir. Ayrıca kurucularından olduğu
+                                                        ÇocukÇa Derneği’nin Genel Sekreterlik görevini
+                                                        sürdürmektedir.<br>İletişim:mustafacan@cocukcacim.org </p>
+
+                                                </div>
+                                                <a data-fancybox data-src="#hidden-content3" href="javascript:;">
+                                                    Özgeçmiş
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <!-- / team item -->
+                                <!-- team item -->
+                                <article class='item'>
+                                    <div class='ourteam_item_wrapper'>
+                                        <div class='media_part'>
+                                            <div class='pic'><img src='../../../../cocukcacim-html/img/yntm44.jpg'
+                                                                  alt/>
+                                                <div class='hover-effect'></div>
+                                                <div class='links_popup'>
+                                                    <div class='link_cont'>
+                                                        <div class='link'><a href='../../../../cocukcacim-html/img/yntm4.jpg'
+                                                                             class='fancy'><i class='fa fa-camera'></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='title_wrap'>
+                                            <h3 class='title'>Sayman Kurucu Üye</h3>
+                                            <div class='positions'><a>Psikolog Funda OĞUZ</a><br>
+                                                <div style="display: none;" id="hidden-content4">
+                                                    <h2>Özgeçmiş</h2>
+                                                    <p> 1992 yılında Antalya‘da doğdu. İlköğrenimini Serik Tekeli
+                                                        İlköğretim Okulu’nda tamamlayan Oğuz, Lise öğrenimini 2010
+                                                        yılında Manavgat Kemer Fatma Turgut Şen Anadolu Lisesi’nde
+                                                        tamamladıktan sonra lisans eğitimine başlamak için İzmir’e
+                                                        taşındı. İzmir Ekonomi Üniversitesi İngilizce Psikoloji
+                                                        Bölümü’nden 2015 yılında mezun oldu. Psikoloji eğitimi boyunca
+                                                        gönüllü stajlar ve çeşitli projeler içerisinde yer aldı. İlk
+                                                        stajını ABC Gelişim Koleji’nde yaparak oyun grubu çocuklarla
+                                                        çalıştı. Bir diğer stajını, Antalya Adalet Sarayı’nda aile ve
+                                                        çocuk mahkemelerinde tamamladı. Dokuz Eylül Üniversitesi
+                                                        Biyofizik Anabilim Dalı’ndaki stajında çeşitli laboratuar
+                                                        çalışmalarına ve beyin araştırmalarına katıldı. Manisa Ruh
+                                                        Sağlığı ve Hastalıkları Hastanesi’nde gönüllü olarak yaptığı
+                                                        stajda ise; çocuk ve ergen polikliniği, yetişkin polikliniği ve
+                                                        kapalı servisleri içerisinde gözlem yapma imkanı bulup görev
+                                                        aldı. Buralarda gördüğü çeşitli vakalar ile kendisine klinik
+                                                        anlamda süpervizyon sağlayan Funda OĞUZ eğitimlerine hâlâ devam
+                                                        etmektedir. 2016 yılı Nisan ayından bu yana Antalya Psikiyatri
+                                                        ve Psikoterapi Merkezi’nde psikolog olarak hizmet vermektedir.
+                                                        Özel ilgi alanı olan çocuk ve ergenlerle çalışmalarına devam
+                                                        etmekte ve ayrıca kurucuları arasında olduğu ÇocukÇa Derneği’nde
+                                                        sayman olarak görevini sürdürmektedir.<br>İletişim:fundaoguz@cocukcacim.org
+                                                    </p>
+
+                                                </div>
+                                                <a data-fancybox data-src="#hidden-content4" href="javascript:;">
+                                                    Özgeçmiş
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <!-- / team item -->
+                                <!-- team item -->
+                                <article class='item'>
+                                    <div class='ourteam_item_wrapper'>
+                                        <div class='media_part'>
+                                            <div class='pic'><img src='../../../../cocukcacim-html/img/yntm55.jpg'
+                                                                  alt/>
+                                                <div class='hover-effect'></div>
+                                                <div class='links_popup'>
+                                                    <div class='link_cont'>
+                                                        <div class='link'><a href='../../../../cocukcacim-html/img/yntm5.jpg'
+                                                                             class='fancy'><i class='fa fa-camera'></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='title_wrap'>
+                                            <h3 class='title'>Kurucu Üye</h3>
+                                            <div class='positions'><a>Op.Dr. Ümit ÖZKAN</a><br>
+                                                <div style="display: none;" id="hidden-content5">
+                                                    <br>
+                                                    <h2>Özgeçmiş</h2>
+                                                    <p> 1977 yılında Antalya’ nın Serik ilçesinde doğan Özkan İlk, Orta
+                                                        ve Lise eğitimini Serik’ de, Lisans eğitimini ise “İstanbul
+                                                        Üniversitesi / İstanbul (Çapa) Tıp Fakültesi” nde tamamladı.
+                                                        Askerlik vazifesini “Mersin 3. Ulaştırma Konak Kısım
+                                                        Komutanlığı” nda Tabip Subay olarak gerçekleştirdikten sonra
+                                                        yüksek lisans eğitimini memleketi olan Antalya’ da “Akdeniz
+                                                        Üniversitesi Tıp Fakültesi Beyin ve Sinir Cerrahisi bölümü” nde
+                                                        tamamladı. Tıp literatüründe az rastlanan bir konuda Tez
+                                                        çalışmasını gerçekleştirerek uzmanlık eğitimini tamamlayan Özkan
+                                                        devlet hizmet yükümlülüğü (mecburi hizmet) görevini “Ardahan
+                                                        Devlet Hastanesi” nde Beyin-Omurilik ve Sinir Cerrahisi uzmanı
+                                                        olarak yerine getirdi, bu süre zarfında, şartların zorluğu
+                                                        sebebiyle hekim bulmakta oldukça zorlanan ve bu sebeple
+                                                        yeterince kan bağışı sağlayamayan Ardahan Kızılay şubesinde,
+                                                        zorlu iklim koşullarına rağmen gönüllü ekip doktorluğu yaparak
+                                                        bağış oranlarının artmasına katkı sağladı. Yine Ardahan ilinde
+                                                        ilk kez gerçekleştirilen “lazer ile kapalı bel fıtığı ameliyatı”
+                                                        tekniği ile il halkına verdiği hizmetler ile ilklere imza atması
+                                                        yanında yöre halkının da sevgisini kazandı. Bunun yanısıra il
+                                                        devlet hastanesinde daha önce yapılmamış “beyin ve omurilik
+                                                        tümörü ameliyatları”, “kaza sonucu gelişmiş ciddi omurga
+                                                        kırıkları ameliyatları”, “çocukluk çağı beyin ve omurilik
+                                                        hastalıkları ameliyatları” gibi ameliyatlarla yöre halkının
+                                                        zorlu iklim koşullarında yüzlerce km uzaklıktaki civar illere
+                                                        gitmelerini önlemiştir. Buradaki görev süresinin tamamlanmasını
+                                                        müteakip, göreve devam etmesi konusunda oluşturulan kamuoyu
+                                                        baskısına rağmen memleketi Antalya’ya dönen Özkan halen özel
+                                                        sektörde Beyin-Omurilik ve Sinir Cerrrahisi Uzmanı olarak
+                                                        çalışmaktadır. Antalya’ da gerçekleştirdiği “uyanık anesteziyle
+                                                        beyin tümörü ameliyatları” ile de yüksek hayati riske sahip
+                                                        hastaların ameliyatlarını minimum riskle gerçekleştirerek zorlu
+                                                        ancak başarılı operasyonlara imza atmaktadır. Zaman zaman insani
+                                                        yardım vakıflarına uzmanlığı alanında ihtiyaç duyulan konularda,
+                                                        mesleğini icra noktasında gönüllü hizmetler de vermektedir. Evli
+                                                        ve 2 çocuk sahibidir. Uzmanlığı alanında çeşitli eğitim ve
+                                                        seminerlere katılarak mesleki birçok sertifika sahibi olan
+                                                        Özkan’ın birçok kongrede poster, sözlü sunum, vaka tartışması
+                                                        gibi katkıları da olmuştur. Boş vakitlerinde bisiklet ile doğa
+                                                        gezisi ve yüzmeyi tercih eden Özkan, kurucu üyesi olduğu ÇocukÇa
+                                                        Derneği’nin faaliyetlerine desteğini de sürdürmektedir.<br>İletişim:umitozkan@cocukcacim.org
+                                                    </p>
+
+                                                </div>
+                                                <a data-fancybox data-src="#hidden-content5" href="javascript:;">
+                                                    Özgeçmiş
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <!-- / team item -->
+                                <!-- team item -->
+                                <article class='item'>
+                                    <div class='ourteam_item_wrapper'>
+                                        <div class='media_part'>
+                                            <div class='pic'><img src='../../../../cocukcacim-html/img/yntm66.jpg'
+                                                                  alt/>
+                                                <div class='hover-effect'></div>
+                                                <div class='links_popup'>
+                                                    <div class='link_cont'>
+                                                        <div class='link'><a href='../../../../cocukcacim-html/img/yntm6.jpeg'
+                                                                             class='fancy'><i class='fa fa-camera'></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='title_wrap'>
+                                            <h3 class='title'>Kurucu Üye</h3>
+                                            <div class='positions'><a>Psikolog Ali ŞİMŞEK</a><br>
+                                                <div style="display: none;" id="hidden-content6">
+                                                    <h2>Özgeçmiş</h2>
+                                                    <p> 1992 yılında Antalyanın Serik ilçesinde doğdu.
+                                                        İlk, orta ve lise eğitimini Serik'te tamamladı. Daha sonra
+                                                        lisans eğitimi için Kıbrısa yerleşti. 2017 yılında Yakın Doğu
+                                                        Üniversitesi Psikoloji bölümünü tamamladı. Lisans hayatı boyunca
+                                                        çeşitli projeler ve gönüllü stajlar içerisinde yer aldı. Lisans
+                                                        bitirme tezini, evreni Kıbrısı kapsayan Madde Bağımlılığı ve
+                                                        Tutumu üzerine yaptı. Bildiği yabancı dil İngilizcedir. 2016
+                                                        yılında Lefkoşa Barış Ruh ve Sinir Hastalıkları Hastahanesi'nde
+                                                        gönüllü olarak yaptığı stajda çocuk, ergen ve yetişkin bireyler
+                                                        üzerinde gözlem yapma imkanı bulup görev almıştır. Burada
+                                                        karşılaştığı vakalar ile klinik anlamda gelişim kazanmıştır.
+                                                        2017 yılında KKTC Milli Eğitim Bakanlığı Lefkoşa Özel Eğitim ve
+                                                        İş Eğitim Merkezinde (5-17 yaş aralığı ) Çocuk - ergen bakımı ve
+                                                        gelişimi üzerine gelişim psikolojisi üzerine staj yapma imkanı
+                                                        bulup görev almıştır. Şuanda Yakın Doğu Üniversitesinde Klinik
+                                                        Psikoloji Yüksek lisans (Tezli) ve diğer gelişim eğitimlerine
+                                                        devam etmektedir. Hâlâ kurucuları arasında olduğu "ÇocukÇa
+                                                        Derneği" yönetim kurulu üyeliği görevini faal olarak
+                                                        sürdürmektedir.<br>İletişim:alisimsek@cocukcacim.org</p>
+
+                                                </div>
+                                                <a data-fancybox data-src="#hidden-content6" href="javascript:;">
+                                                    Özgeçmiş
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </article>
+                                <!-- / team item -->
+                            </div>
+                        </div>
+                        <input type='hidden' class='cws_ourteam_ajax_data'
+                               value='{"p_id":1904,"mode":"grid","cats":[],"filter":"all","posts_per_page":"10"}'/>
+                    </section>
+                </div>
+                <!-- / our team section -->
+            </main>
+            <!-- pattern section / -->
+            <div class='right-pattern pattern pattern-2'></div>
+            <!-- footer container image / -->
+            <div class="footer_image"></div>
+        </div>
+        <!-- svg filter -->
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" style='display:none;'>
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+                    <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                   result="goo"/>
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                </filter>
+            </defs>
+        </svg>
+        <!-- / svg filter -->
+    </div>
+    <!-- #main -->
+    <!-- footer -->
+    <div class='footer_wrapper_copyright'>
+        <!-- canvas -->
+        <div class='half_sin_wrapper'>
+            <canvas class='half_sin' data-bg-color='23,108,129' data-line-color='23,108,129'></canvas>
+        </div>
+        <!-- / canvas -->
+
+        <!-- copyright -->
+        <div class='copyrights_area'>
+            <!-- canvas -->
+            <div class='half_sin_wrapper'>
+                <canvas class='footer_half_sin' data-bg-color='14,64,77' data-line-color='14,64,77'></canvas>
+            </div>
+            <!-- / canvas -->
+            <div class='container-fluid'>
+                <div class='copyrights_container'>
+                    <div class='copyrights'>
+                        <div class="grid_col_4" style="text-align: center;float:left;">
+                            <div class="copyr">
+                                <p>Copyrights ©2017: cocukcacim.org</p></div>
+                        </div>
+                        <div class="grid_col_4" style="text-align: center;float:left;">
+                            <a class="orgino" href="http://orgino.com.tr/"><img src="../../../../cocukcacim-html/img/orginologo.svg"
+                                                                                alt="Orgino"></a>
+                        </div>
+                        <div class="grid_col_4" style="text-align: right;float:left;">
+                            <div class='cws_social_links'><a href='https://twitter.com/cocukcacim' target="_blank"
+                                                             class='cws_social_link'
+                                                             title='Twitter'><i
+                                    class='share-icon fa fa-twitter'></i></a><a
+                                    href='https://www.facebook.com/cocukcacim/?ref=bookmarks' target="_blank"
+                                    class='cws_social_link'
+                                    title='Facebook'><i
+                                    class='share-icon fa fa-facebook'></i></a><a
+                                    href='https://www.instagram.com/cocukcacim/' target="_blank"
+                                    class='cws_social_link'
+                                    title='İnstagram'><i
+                                    class='share-icon fa fa-instagram'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='copyrights_panel'>
+                        <div class='copyrights_panel_wrapper'>
+                            <div class="lang_bar">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / copyright -->
+</div>
+</div>
+<!-- #page -->
+<div class='scroll_top animated'></div>
+<div id="lang_sel_footer">
+    <ul>
+        <li>
+            <a href="yonetim.html" class="lang_sel_sel"><img src="../../../../cocukcacim-html/img/en.png" alt="English" class="iclflag"
+                                                             title="English"/>&nbsp;English</a>
+        </li>
+        <li>
+            <a href="#"><img src="../../../../cocukcacim-html/img/fr.png" alt="Français" class="iclflag" title="Français"/>&nbsp;Français</a>
+        </li>
+        <li>
+            <a href="#"><img src="../../../../cocukcacim-html/img/de.png" alt="Deutsch" class="iclflag" title="Deutsch"/>&nbsp;Deutsch</a>
+        </li>
+    </ul>
+</div>
+<script type='text/javascript' src='../../../../cocukcacim-html/js/retina_1.3.0.js'></script>
+<script type='text/javascript' src='../../../../cocukcacim-html/js/modernizr.js'></script>
+<script type='text/javascript' src='../../../../cocukcacim-html/js/owl.carousel.js'></script>
+<script type='text/javascript' src='../../../../cocukcacim-html/js/TweenMax.min.js'></script>
+<script type='text/javascript' src='../../../../cocukcacim-html/js/jquery.isotope.min.js'></script>
+<script type='text/javascript' src='../../../../cocukcacim-html/js/jquery.fancybox.js'></script>
+<script type='text/javascript' src='../../../../cocukcacim-html/js/select2.min.js'></script>
+<script type='text/javascript' src='../../../../cocukcacim-html/js/wow.min.js'></script>
+<script type='text/javascript' src='../../../../cocukcacim-html/js/jquery.validate.min.js'></script>
+<script type='text/javascript' src="../../../../cocukcacim-html/js/jquery.form.min.js"></script>
+<script type='text/javascript' src='../../../../cocukcacim-html/js/scripts.js'></script>
+<script type='text/javascript' src="../../../../cocukcacim-html/js/jquery.tweet.js"></script>
+</body>
+
+</html>

@@ -23,6 +23,9 @@ urlpatterns = [
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'', include('cocukcacim.apps.home.urls', namespace='home')),
     url(r'^sayfa/', include('cocukcacim.apps.page.urls', namespace='page')),
+    url(r'^etkinlikler/', include('cocukcacim.apps.activities.urls', namespace='activities')),
+    url(r'^iletisim/',include('cocukcacim.apps.contact.urls',namespace='contact')),
+    url(r'^yönetim/',include('cocukcacim.apps.management.urls',namespace='management')),
 ]
 
 # http://cocukcacim.com/

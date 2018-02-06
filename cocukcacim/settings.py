@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'cocukcacim.apps.contact',
     'cocukcacim.apps.page',
     'cocukcacim.apps.activities',
+    'cocukcacim.apps.management',
 ]
 
 MIDDLEWARE = [

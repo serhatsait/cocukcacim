@@ -1,0 +1,315 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="{% static 'img/cropped-favicon-192x192.png' %}"/>
+    <title>Etkinlikler</title>
+    <link rel='stylesheet' href='{% static 'css/font-awesome.css' %}' type='text/css' media='all'/>
+    <link rel='stylesheet' href='{% static 'css/jquery.fancybox.css' %}' type='text/css' media='all'/>
+    <link rel='stylesheet' href='{% static 'css/select2.css' %}' type='text/css' media='all'/>
+    <link rel='stylesheet' href='{% static 'css/animate.css' %}' type='text/css' media='all'/>
+    <link rel='stylesheet' href='{% static 'css/main.css' %}' type='text/css' media='all'/>
+    <link rel='stylesheet' href='{% static 'css/shop.css' %}' type='text/css' media='all'/>
+    <script type='text/javascript' src='{% static "js/jquery.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/jquery-migrate.min.js" %}'></script>
+    <link rel="icon" href="{% static 'img/cropped-favicon-32x32.png' %}" sizes="32x32"/>
+    <link rel="icon" href="{% static 'img/cropped-favicon-192x192.png' %}" sizes="192x192"/>
+    <link rel="apple-touch-icon-precomposed" href="{% static 'img/cropped-favicon-180x180.png' %}">
+    <meta name="msapplication-TileImage" content="img/cropped-favicon-270x270.png">
+</head>
+
+<body class="page wide wave-style">
+{% block body %}
+    <div class="page">
+        <!-- top panel -->
+        <div class='site_top_panel wave slider'>
+            <!-- canvas -->
+            <div class='top_half_sin_wrapper'>
+                <canvas class='top_half_sin' data-bg-color='#ffffff' data-line-color='#ffffff'></canvas>
+            </div>
+            <!-- / canvas -->
+            <div class='container'>
+                <div class='row_text_search'>
+                    <div id='top_panel_text'><a href="tel:+905417221375"><i class="fa fa-phone-square"></i>
+                        +90 541 722 13 75 </a>;
+                        <a href="mailto:info@cocukcacim.org"> <i class="fa fa-envelope-o"></i>info@cocukcacim.org</a>
+                    </div>
+                    <form method="get" class="search-form" action="#">
+                        <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="text" class="search-field vova" value="" name="s" title="Search for:"/>
+                        </label>
+                        <input type="submit" class="search-submit" value="Search"/>
+                        <input type='hidden' name='lang' value='en'/>
+                    </form>
+                </div>
+                <div id='top_panel_links'>
+                    <div class='search_icon'></div>
+                    <div id='top_social_links_wrapper'>
+                        <div class='share-toggle-button'><i class='share-icon fa fa-share-alt'></i></div>
+                        <div class='cws_social_links'>
+                            <a href='https://twitter.com/cocukcacim' target="_blank" class='cws_social_link'
+                               title='Twitter'><i
+                                    class='share-icon fa fa-twitter'></i></a>
+                            <a href='https://www.facebook.com/cocukcacim' target="_blank"
+                               class='cws_social_link' title='Facebook'><i
+                                    class='share-icon fa fa-facebook'></i></a>
+                            <a href='https://www.instagram.com/cocukcacim/' target="_blank"
+                               class='cws_social_link' title='Instagram'><i
+                                    class='share-icon fa fa-instagram'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="site_top_panel_toggle"></div>
+            </div>
+        </div>
+        <!-- / top panel -->
+        <!-- header container -->
+        <div class='header_cont'>
+            <div class='header_mask'>
+                <div class='header_pattern'></div>
+                <div class='header_img'></div>
+            </div>
+            <header class='site_header logo-in-menu' data-menu-after="3">
+                <div class="header_box">
+                    <div class="container">
+                        <!-- logo -->
+                        <div class="header_logo_part with_border" role="banner">
+                            <a class="logo" href="/cocukcacim-html/index.html"><img
+                                    src='{% static "img/cocukca-logo.png" %}'
+                                    data-at2x='img/cocukca-logo.png' alt/></a>
+                        </div>
+                        <!-- / logo -->
+                        <!-- menu -->
+                        <div class="header_nav_part">
+                            <nav class="main-nav-container a-right">
+                                <div class="mobile_menu_header">
+                                    <i class="mobile_menu_switcher"><span></span><span></span><span></span></i>
+                                </div>
+                                <ul id="menu-main-menu" class="main-menu menu-bees">
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children bees-start">
+                                        <a href="{% static 'index.html' %}">
+                                            <div class="bees bees-start"><span></span>
+                                                <div class="line-one"></div>
+                                                <div class="line-two"></div>
+                                            </div>
+                                            Anasayfa
+                                            <div class="canvas_wrapper">
+                                                <canvas class="menu_dashed"></canvas>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children"><a
+                                            href="{% static 'hikayemiz.html' %}">Hikayemiz
+                                        <div class="canvas_wrapper">
+                                            <canvas class="menu_dashed"></canvas>
+                                        </div>
+                                    </a>
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children"><a href="yonetim.html">Yönetim
+                                        <div class="canvas_wrapper">
+                                            <canvas class="menu_dashed"></canvas>
+                                        </div>
+                                    </a>
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item current-menu-item page_item current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children right">
+                                        <a href="etkinlikler.html">Etkinlik
+                                            <div class="canvas_wrapper">
+                                                <canvas class="menu_dashed"></canvas>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children right"><a href="tuzuk.html">Tüzük
+                                        <div class="canvas_wrapper">
+                                            <canvas class="menu_dashed"></canvas>
+                                        </div>
+                                    </a>
+
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item right bees-end">
+                                        <a href="iletisim.html">
+                                            <div class="bees bees-end"><span></span>
+                                                <div class="line-one"></div>
+                                                <div class="line-two"></div>
+                                            </div>
+                                            İletişim
+                                            <div class="canvas_wrapper">
+                                                <canvas class="menu_dashed"></canvas>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- / menu item -->
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- / menu -->
+                    </div>
+                </div>
+            </header>
+            <!-- #masthead -->
+        </div>
+        <!-- / header container -->
+        <!-- breadcrumbs -->
+        <section class='page_title wave'>
+            <div class='container'>
+                <div class='title'>
+                    <h1>Etkinliklerimiz</h1></div>
+                <nav class="bread-crumbs"><a href="index.html">Anasayfa</a><i
+                        class="delimiter fa fa-chevron-right"></i><span
+                        class="current">Etkinlik</span></nav>
+                <!-- .breadcrumbs -->
+            </div>
+            <canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
+        </section>
+        <!-- / breadcrumbs -->
+        <!-- main container -->
+        <div id="main" class="site-main">
+            <div class="page_content">
+                <!-- pattern container / -->
+                <div class='left-pattern pattern pattern-2'></div>
+                <main>
+                    <div class='grid_row clearfix'>
+                        <!-- filter -->{% for post in posts.reverse %}
+                        <section class='cws_portfolio massonry'>
+
+                            <div class='cws_portfolio_header'>
+                                <h6 class="ce_title" style="font-size: 37px">{{ post.title }}
+                                    \ {{ post.event_date }}</h6>
+                            </div>
+                            <h3 class="ce_title" style="font-size: 25px; color: #fec20b;">{{ post.description }}</h3>
+                            <div class='cws_wrapper'>
+                                <div class='cws_portfolio_items grid grid-4 isotope'>
+                                    <!-- item -->
+                                    <article class="item all explore">
+                                        <div class='media_part'>
+                                            <div class='pic'><img src='{{ post.image.url }}'
+                                                                  alt=""/>
+                                                <div class='hover-effect'></div>
+                                                <div class='links_popup'>
+                                                    <div class='link_cont'>
+                                                        <div class='link'>
+                                                            <a class='fancy' href="{{ post.image.url }}"
+                                                               data-fancybox-group='cws-portfolio-gallery-564ee111237c6'><i
+                                                                    class='fa fa-camera'></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class='fancy' href="{{ post.image.url }}"
+                                           data-fancybox-group='cws-portfolio-gallery-564ee111237c6'>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class='grid_row clearfix'>
+                                <div class='grid_col grid_col_12'>
+                                    <div class='ce clearfix'>
+                                        <div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    {% endfor %}
+                        <!-- / filter -->
+                    </div>
+                </main>
+                <!-- / main content -->
+                <!-- pattern container / -->
+                <div class='right-pattern pattern pattern-2'></div>
+                <!-- footer image container / -->
+                <div class="footer_image"></div>
+            </div>
+        </div>
+        <!-- #main -->
+        <!-- footer -->
+        <div class='footer_wrapper_copyright'>
+            <!--&lt;!&ndash; canvas &ndash;&gt;-->
+            <div class='half_sin_wrapper'>
+                <canvas class='half_sin' data-bg-color='23,108,129' data-line-color='23,108,129'></canvas>
+            </div>
+            <!-- / canvas -->
+            <!--</footer>-->
+            <!-- copyright -->
+            <div class='copyrights_area'>
+                <!-- canvas -->
+                <div class='half_sin_wrapper'>
+                    <canvas class='footer_half_sin' data-bg-color='14,64,77' data-line-color='14,64,77'></canvas>
+                </div>
+                <!-- / canvas -->
+                <div class='container-fluid'>
+                    <div class='copyrights_container'>
+                        <div class='copyrights'>
+                            <div class="grid_col_4" style="text-align: center;float:left;">
+                                <div class="copyr">
+                                    <p>Copyrights ©2017: cocukcacim.org</p></div>
+                            </div>
+                            <div class="grid_col_4" style="text-align: center;float:left;">
+                                <a class="orgino" href="http://orgino.com.tr/"><img
+                                        src="{% static 'img/orginologo.svg' %}"
+                                        alt="Orgino"></a>
+                            </div>
+                            <div class="grid_col_4" style="text-align: right;float:left;">
+                                <div class='cws_social_links'><a href='https://twitter.com/cocukcacim' target="_blank"
+                                                                 class='cws_social_link'
+                                                                 title='Twitter'><i
+                                        class='share-icon fa fa-twitter'></i></a><a
+                                        href='https://www.facebook.com/cocukcacim/?ref=bookmarks' target="_blank"
+                                        class='cws_social_link'
+                                        title='Facebook'><i
+                                        class='share-icon fa fa-facebook'></i></a><a
+                                        href='https://www.instagram.com/cocukcacim/' target="_blank"
+                                        class='cws_social_link'
+                                        title='İnstagram'><i
+                                        class='share-icon fa fa-instagram'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='copyrights_panel'>
+                            <div class='copyrights_panel_wrapper'>
+                                <div class="lang_bar">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / copyright -->
+        </div>
+    </div>
+    <!-- #page -->
+    <div class='scroll_top animated'></div>
+
+    <script type='text/javascript' src='{% static "js/retina_1.3.0.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/modernizr.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/owl.carousel.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/TweenMax.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/jquery.isotope.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/jquery.fancybox.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/select2.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/wow.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/jquery.validate.min.js" %}'></script>
+    <script type='text/javascript' src="{% static 'js/jquery.form.min.js' %}"></script>
+    <script type='text/javascript' src='{% static "js/scripts.js" %}'></script>
+    <script type='text/javascript' src="{% static 'js/jquery.tweet.js' %}"></script>
+    </body>{% endblock %}

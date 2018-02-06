@@ -1,3 +1,4 @@
 from django.contrib import admin
+from cocukcacim.apps.contact.models import Contactpage
 
-# Register your models here.
+admin.site.register(Contactpage)
